@@ -1,0 +1,28 @@
+# Test your FastAPI endpoints
+
+POST http://127.0.0.1:8000/tasks
+Content-Type: application/json
+
+{
+  "title": "New Task",
+  "description": "Description of the new task",
+  "completed": false
+}
+###
+
+GET http://127.0.0.1:8000/tasks
+
+###
+
+PUT http://127.0.0.1:8000/tasks/3
+Content-Type: application/json
+
+{
+  "title": "Updated Task Title!!!!!",
+  "description": "Updated task description!!!",
+  "completed": true
+}
+
+###
+
+GET http://127.0.0.1:8000/tasks/completed-count
