@@ -91,4 +91,3 @@ async def get_task(task_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Task not found")
     logger.info("Task retrieved: %s", db_task)
     return db_task
-# новый коммит
