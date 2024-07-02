@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .database import SessionLocal, Base, engine, Task
-from .models import TaskCreate, Task as TaskModel
+from database import SessionLocal, Base, engine, Task
+from models import TaskCreate, Task as TaskModel
 
 app = FastAPI()
 
